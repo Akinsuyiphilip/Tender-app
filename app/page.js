@@ -21,7 +21,7 @@ export default function SignupPage() {
               Tender
             </h2>
           </div>
-          <div className="mt-32">
+          <div className="mt-20">
             <h2
               className={`${archivo.className}  text-4xl w-2/3 font-bold leading-11 text-white`}
             >
