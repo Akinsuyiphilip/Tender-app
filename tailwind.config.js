@@ -22,6 +22,8 @@ module.exports = {
         skylighter: "#F2F4F5",
         line: "#E8E8E8",
         gray: "#4F4F4F",
+        backgd: "#F7F7F7",
+        blue: "#0065D0",
       },
       lineHeight: {
         11: " 3.35rem",
