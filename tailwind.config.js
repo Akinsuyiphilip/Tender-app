@@ -12,21 +12,31 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      margin: {
+        spage: "30rem",
+      },
       width: {
         "screen-1/2": "50%", // Set the height to 50% of the viewport height
-        textbox: "35.5rem",
+        textbox: "20%",
+        lite: "48%",
+        sem: "95%",
+        wity: "5rem",
+      },
+      height: {
+        sidebarheight: "52.25rem",
+        pieheight: "17.25rem",
       },
       colors: {
-        neonLogo: "#E4F065", // Custom color
-        title: "#1F2739",
-        skylighter: "#F2F4F5",
-        line: "#E8E8E8",
-        gray: "#4F4F4F",
-        backgd: "#F7F7F7",
-        blue: "#0065D0",
-      },
-      lineHeight: {
-        11: " 3.35rem",
+        backgd: "#272A2D",
+        blurwhite: "#F7F7F7",
+        neon: "#E4F065",
+        lightBlu: "#C9F0FF",
+        ashluxebg: "#090A0A",
+        gray: "#72777A",
+        greens: "#ECFCE5",
+        green1: "#219653",
+        lemon: "#E4F065",
+        lightyellow: "#FFEFD7",
       },
       boxShadow: {
         frw: "0px 2px 3px 0px rgba(0, 0, 0, 0.17), 0px 0px 3px 0px rgba(0, 0, 0, 0.08)",
