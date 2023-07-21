@@ -5,6 +5,7 @@ import { Archivo } from "next/font/google";
 import { Rubik } from "next/font/google";
 import SideComponent from "../../components/sidecomponet";
 import Lhart from "../../components/LineChart";
+import Table from "../../components/Table";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 const archivo = Archivo({ subsets: ["latin"] });
@@ -14,7 +15,7 @@ export default function Dashboard() {
   const nextDatasets = [];
 
   return (
-    <main className="h-screen w-full bg-blurwhite flex flex-row">
+    <main className="min-h-screen w-full bg-blurwhite flex flex-row pb-3">
       <div className="w-textbox h-sidebarheight">
         <SideComponent />
       </div>
@@ -140,14 +141,52 @@ export default function Dashboard() {
                   <img src="/chevron-down.svg" alt="" />
                 </div>
               </div>
-              <div className=" flex flex-row mt-6 mx-5 "></div>
+              <div className=" flex flex-row mt-6 mx-5 ">{/* <Lhart /> */}</div>
             </div>
             {/* lower part */}
 
-            <div>
-              
+            <div className=" bg-white h-limeheight p-4 rounded-lg mt-8">
+              <p>Sales</p>
+
+              <div className="bosexs flex flex-row justify-between w-full mt-5">
+                <div className="bg-lightgrayng py-3 px-4 h-20 border-solid border-2 border-borderlighgray rounded-lg ">
+                  <p>Monday</p>
+                  <p>$4,200</p>
+                </div>
+
+                <div className="bg-lightgrayng py-3 px-4 h-20 border-solid border-2 border-borderlighgray rounded-lg ">
+                  <p>Monday</p>
+                  <p>$4,200</p>
+                </div>
+
+                <div className="bg-lightgrayng py-3 px-4 h-20 border-solid border-2 border-borderlighgray rounded-lg ">
+                  <p>Monday</p>
+                  <p>$4,200</p>
+                </div>
+
+                <div className="bg-lightgrayng py-3 px-4 h-20 border-solid border-2 border-borderlighgray rounded-lg ">
+                  <p>Monday</p>
+                  <p>$4,200</p>
+                </div>
+                <div className="bg-lightgrayng py-3 px-4 h-20 border-solid border-2 border-borderlighgray rounded-lg ">
+                  <p>Monday</p>
+                  <p>$4,200</p>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+
+        {/* table section */}
+        <section className=" mt-10 flex flex-col justify-between bg-white p-7">
+          <div className="flex flex-row justify-between w-full my-6">
+            <p className="text-xl font-semibold">Recent Transactions</p>
+            <div className=" flex flex-row items-center">
+              <p className="text-sm">Today</p>
+              <img src="/chevron-down.svg" alt="" />
+            </div>
+          </div>
+          <Table />
         </section>
       </div>
     </main>

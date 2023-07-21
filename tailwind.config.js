@@ -21,10 +21,12 @@ module.exports = {
         lite: "48%",
         sem: "95%",
         wity: "5rem",
+        witry: "7rem",
       },
       height: {
         sidebarheight: "52.25rem",
         pieheight: "17.25rem",
+        limeheight: "13.0625rem",
       },
       colors: {
         backgd: "#272A2D",
@@ -37,10 +39,14 @@ module.exports = {
         green1: "#219653",
         lemon: "#E4F065",
         lightyellow: "#FFEFD7",
+        lightgrayng: "#F7F9FB",
       },
       boxShadow: {
         frw: "0px 2px 3px 0px rgba(0, 0, 0, 0.17), 0px 0px 3px 0px rgba(0, 0, 0, 0.08)",
       },
+      borderColor:{
+        borderlighgray:"#E8E8E8"
+      }
     },
   },
   plugins: [],

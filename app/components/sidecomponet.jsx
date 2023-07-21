@@ -24,7 +24,7 @@ export default function SideComponent() {
             </Link>
             <Link
               href="/"
-              className="p-3 rounded-lg text-neon items-center  text-black text-lg font-semibold flex flex-row"
+              className="p-3 rounded-lg text-neon items-center text-lg font-semibold flex flex-row"
             >
               <img src="/acceslogo.svg" alt="logo" className="pr-2 " />
               Access Control
