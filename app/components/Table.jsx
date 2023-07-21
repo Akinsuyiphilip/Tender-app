@@ -1,6 +1,23 @@
 import React from "react";
+import RecieveIconbtn from "../../public/RecieveIconbtn.svg";
+import Avanlanche from "../../public/Avanlanche.svg";
 
 const Table = () => {
+  const DataFile = [
+    {
+      date: "6/19/14",
+      Type: "Recieve",
+      TypeIcon: RecieveIconbtn,
+      Chain: "Avalanche",
+      ImageIcon: Avanlanche,
+      WalletAddress: "0xfdc4846ccd6548facecd0b2b...",
+      Amount: "$120,000",
+      Status: "Completed",
+      clas: "LeftBorder",
+      class: "RightBorder",
+    },
+  ];
+
   return (
     <table className="table-auto w-full text-left">
       <thead className="bg-blurwhite rounded-lg">
@@ -14,66 +31,32 @@ const Table = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td className="border-b-2 border-borderlighgray border-l-2 border-solid px-4 py-2">
-            6/19/14
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            Recieve
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            Avalanche
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            0xfdc4846ccd6548facecd0b2b...
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            $120,000
-          </td>
-          <td className="border-b-2 border-borderlighgray border-r-2 border-solid px-4 py-2">
-            Completed
-          </td>
-        </tr>
-        <tr>
-          <td className="border-b-2 border-borderlighgray border-l-2 border-solid px-4 py-2">
-            6/19/14
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            Recieve
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            Avalanche
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            0xfdc4846ccd6548facecd0b2b...
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            $120,000
-          </td>
-          <td className="border-b-2 border-borderlighgray border-r-2 border-solid px-4 py-2">
-            Completed
-          </td>
-        </tr>
-        <tr>
-          <td className="border-b-2 border-borderlighgray border-l-2 border-solid px-4 py-2">
-            6/19/14
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            Recieve
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            Avalanche
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            0xfdc4846ccd6548facecd0b2b...
-          </td>
-          <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
-            $120,000
-          </td>
-          <td className="border-b-2 border-borderlighgray border-r-2 border-solid px-4 py-2">
-            Completed
-          </td>
-        </tr>
+        {DataFile.map((d, i) => {
+          return (
+            <tr key={i}>
+              <td className="border-b-2 border-borderlighgray border-l-2 border-solid px-4 py-2">
+                {d.date}
+              </td>
+              <td className="border-b-2 border-borderlighgray border-solid px-4 py-2 ">
+                <img src={d.TypeIcon} alt="icon" className="w-20 p-10"/>
+                {d.Type}
+              </td>
+              <td className="border-b-2 border-borderlighgray border-solid px-4 py-2 ">
+                <img src={d.ImageIcon} alt="imageicon" />
+                {d.Chain}
+              </td>
+              <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
+                {d.WalletAddress}
+              </td>
+              <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
+                {d.Amount}{" "}
+              </td>
+              <td className="border-b-2 border-borderlighgray border-r-2 border-solid px-4 py-2">
+                {d.Status}
+              </td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
