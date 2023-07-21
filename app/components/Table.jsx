@@ -1,15 +1,13 @@
 import React from "react";
-import RecieveIconbtn from "../../public/RecieveIconbtn.svg";
-import Avanlanche from "../../public/Avanlanche.svg";
 
 const Table = () => {
   const DataFile = [
     {
       date: "6/19/14",
       Type: "Recieve",
-      TypeIcon: RecieveIconbtn,
+
       Chain: "Avalanche",
-      ImageIcon: Avanlanche,
+
       WalletAddress: "0xfdc4846ccd6548facecd0b2b...",
       Amount: "$120,000",
       Status: "Completed",
@@ -38,11 +36,10 @@ const Table = () => {
                 {d.date}
               </td>
               <td className="border-b-2 border-borderlighgray border-solid px-4 py-2 ">
-                <img src={d.TypeIcon} alt="icon" className="w-20 p-10"/>
-                {d.Type}
+                <img src="/RecieveIconbtn.svg" alt="icon" />{d.Type}
               </td>
               <td className="border-b-2 border-borderlighgray border-solid px-4 py-2 ">
-                <img src={d.ImageIcon} alt="imageicon" />
+                <img src="/Avanlanche.svg" alt="imageicon" />
                 {d.Chain}
               </td>
               <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
