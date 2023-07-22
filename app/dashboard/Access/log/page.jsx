@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Orbitron } from "next/font/google";
 import { Archivo } from "next/font/google";
 import { Rubik } from "next/font/google";
-import SideComponent from "../../components/sidecomponet";
-import Table from "../../components/Table";
+import SideComponent from "../../../components/sidecomponet";
+import Table from "../../../components/Logtable";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 const archivo = Archivo({ subsets: ["latin"] });
@@ -33,18 +33,20 @@ export default function Dashboard() {
         <section className=" mt-10 flex flex-row justify-between">
           {/* first sidde */}
           <div className="flex flex-row justify-between items-center  text-center rounded-lg  my-4 w-3/6 border-solid border border-borderlighgray">
-            <div className="bg-white w-1/3 shadow-mer p-2 rounded-lg font-semibold">Merchants</div>
+            <div className="w-1/3  p-2 "> Merchants</div>
             <div className="w-1/3  p-2 ">KYC</div>
-            <div className="w-1/3  p-2 ">Logs</div>
+            <div className="bg-white w-1/3 shadow-mer p-2 rounded-lg font-semibold">
+              Logs
+            </div>
           </div>
         </section>
 
         {/* table section */}
-        <section className=" mt-10 flex flex-col justify-between bg-white p-7">
-          <div className="flex flex-row justify-between w-full my-6">
-            <p className="text-xl font-semibold">Recent Transactions</p>
+        <section className=" mt-10 flex flex-col justify-between rounded-lg bg-white p-7">
+          <div className="flex flex-row justify-between w-full mb-5">
+            <p className="text-xl font-semibold">Login Sessions</p>
             <div className=" flex flex-row items-center">
-              <p className="text-sm">Today</p>
+              <p className="text-sm text-gray">This week</p>
               <img src="/chevron-down.svg" alt="" />
             </div>
           </div>

@@ -44,10 +44,11 @@ module.exports = {
       },
       boxShadow: {
         frw: "0px 2px 3px 0px rgba(0, 0, 0, 0.17), 0px 0px 3px 0px rgba(0, 0, 0, 0.08)",
+        mer: "box-shadow: 0px 0px 8px 0px rgba(20, 20, 20, 0.08), 0px 0px 1px 0px rgba(20, 20, 20, 0.04)",
       },
-      borderColor:{
-        borderlighgray:"#E8E8E8"
-      }
+      borderColor: {
+        borderlighgray: "#E8E8E8",
+      },
     },
   },
   plugins: [],
