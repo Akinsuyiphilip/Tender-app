@@ -5,9 +5,7 @@ const Table = () => {
     {
       date: "6/19/14",
       Type: "Recieve",
-
       Chain: "Avalanche",
-
       WalletAddress: "0xfdc4846ccd6548facecd0b2b...",
       Amount: "$120,000",
       Status: "Completed",

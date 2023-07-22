@@ -5,7 +5,6 @@ import { Archivo } from "next/font/google";
 import { Rubik } from "next/font/google";
 import SideComponent from "../../components/sidecomponet";
 import Table from "../../components/Table";
-import DashChart from "../../components/chart"
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 const archivo = Archivo({ subsets: ["latin"] });
@@ -15,12 +14,12 @@ export default function Dashboard() {
   const nextDatasets = [];
 
   return (
-    <main className="min-h-screen min-w-full bg-blurwhite flex flex-row pb-3">
+    <main className="min-h-screen w-full bg-blurwhite flex flex-row pb-3">
       <div className="w-textbox h-sidebarheight">
         <SideComponent />
       </div>
       {/* main dashboard */}
-      <div className=" text-black w-4/5 mt-5 mx-6">
+      <div className=" text-black w-4/5 mt-5 mx-10">
         {/* header div */}
         <div className="flex flex-row justify-between items-center w-full">
           <h2 className="font-bold text-xl">Dashboard</h2>
@@ -133,7 +132,7 @@ export default function Dashboard() {
           {/* second side */}
           <div className=" w-lite">
             {/* top part */}
-            <div className="bg-white w-full h-lineheight p-2 rounded-lg ">
+            <div className="bg-white w-full h-pieheight p-2 rounded-lg ">
               <div className="flex flex-row justify-between mx-3 ">
                 <p className="text-sm">Most Used Chain</p>
                 <div className=" flex flex-row w-32 justify-end">
@@ -141,13 +140,11 @@ export default function Dashboard() {
                   <img src="/chevron-down.svg" alt="" />
                 </div>
               </div>
-              <div className=" flex flex-row mt-2 mx-3 h-pieheight ">
-                <DashChart />
-              </div>
+              <div className=" flex flex-row mt-6 mx-5 ">{/* <Lhart /> */}</div>
             </div>
             {/* lower part */}
 
-            <div className=" bg-white h-limeheight p-4 rounded-lg mt-2">
+            <div className=" bg-white h-limeheight p-4 rounded-lg mt-8">
               <p>Sales</p>
 
               <div className="bosexs flex flex-row justify-between w-full mt-5">

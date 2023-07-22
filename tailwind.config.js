@@ -26,7 +26,8 @@ module.exports = {
       height: {
         sidebarheight: "52.25rem",
         pieheight: "17.25rem",
-        limeheight: "13.0625rem",
+        lineheight: "20rem",
+        limeheight: "11.0625rem",
       },
       colors: {
         backgd: "#272A2D",
