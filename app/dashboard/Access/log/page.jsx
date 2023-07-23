@@ -33,8 +33,8 @@ export default function Dashboard() {
         <section className=" mt-10 flex flex-row justify-between">
           {/* first sidde */}
           <div className="flex flex-row justify-between items-center  text-center rounded-lg  my-4 w-3/6 border-solid border border-borderlighgray">
-            <div className="w-1/3  p-2 "> Merchants</div>
-            <div className="w-1/3  p-2 ">KYC</div>
+            <div className="w-1/3  p-2 text-gray "> Merchants</div>
+            <div className="w-1/3  p-2  text-gray ">KYC</div>
             <div className="bg-white w-1/3 shadow-mer p-2 rounded-lg font-semibold">
               Logs
             </div>

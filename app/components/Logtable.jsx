@@ -99,7 +99,7 @@ const Table = () => {
               <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
                 {d.Browser}{" "}
               </td>
-              <td className="border-b-2 border-borderlighgray border-r-2 border-solid px-4 py-2">
+              <td className="border-b-2 border-borderlighgray border-solid px-4 py-2">
                 {d.IPAddress}
               </td>
               <td className="border-b-2 border-borderlighgray border-r-2 border-solid px-4 py-2">

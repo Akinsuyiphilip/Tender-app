@@ -11,6 +11,8 @@ const archivo = Archivo({ subsets: ["latin"] });
 const rubik = Rubik({ subsets: ["latin"] });
 
 export default function Dashboard() {
+  
+
   return (
     <main className="min-h-screen w-full bg-blurwhite flex flex-row pb-3">
       <div className="w-textbox h-sidebarheight">
