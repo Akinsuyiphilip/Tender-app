@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Orbitron } from "next/font/google";
 import { Archivo } from "next/font/google";
 import { Rubik } from "next/font/google";
-import SideComponent from "../../components/sidecomponet";
-import Table from "../../components/marketable";
+import SideComponent from "../../../components/sidecomponet";
+import Table from "../../../components/kyctable";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 const archivo = Archivo({ subsets: ["latin"] });
@@ -31,16 +31,24 @@ export default function Dashboard() {
         <section className=" mt-10 flex flex-row justify-between">
           {/* first sidde */}
           <div className="flex flex-row justify-between items-center  text-center rounded-lg  my-4 w-3/6 border-solid border border-borderlighgray">
+            <div className="w-1/3  p-2 text-gray">Merchants</div>
             <div className="bg-white w-1/3 shadow-mer p-2 rounded-lg font-semibold">
-              Merchants
+              KYC
             </div>
-            <div className="w-1/3  p-2 text-gray">KYC</div>
             <div className="w-1/3  p-2 text-gray">Logs</div>
           </div>
         </section>
         <section>
           <div className="flex flex-row justify-between w-full my-6">
-            <p className="text-xl font-semibold">All Merchants</p>
+            <div className=" flex flex-row items-center">
+              <p className="text-xl font-light mr-2">New KYC Submissions</p>
+              <Image
+                src="/chevron-down.svg"
+                width={20}
+                height={50}
+                alt="filter"
+              />
+            </div>
             <div className=" flex flex-row justify-between ">
               <div className=" flex flex-row items-center pr-10">
                 <div className="flex flex-row justify-between p-2 bg-white w-36 rounded-lg border border-grat border-solid">
